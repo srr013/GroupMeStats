@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}GroupMe Stats - {{results[1]['group_name']}} {% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <table>
+    <tr><strong>Leader Board</strong></tr><br>
+    <tr>Most Hearts Given: {{results[1]['most_hearts_given'][0]}}: {{results[1]['most_hearts_given'][1]}}</tr><br>
+    <tr>Most Hearts Received: {{results[1]['most_hearts_received'][0]}}: {{results[1]['most_hearts_received'][1]}}</tr><br>
+    <tr>Best Ratio Hearts per Hearted Post: {{results[1]['favorites_per_favorited_post'][0]}}: {{results[1]['favorites_per_favorited_post'][1]}}</tr><br>
+  </table>
+
+  <table>
+  {% for result in results[0] %}
+    <tr> <strong> Participant - {{result['name']}} </strong></tr><br>
+    <tr> Hearts Received: {{result['num_favorites']}} </tr><br>
+    <tr> Hearts Given: {{result['num_favorited']}} </tr><br>
+    <tr> Messages With Hearts: {{result['num_favorited_messages']}} </tr><br>
+    <tr> # Posts: {{result['num_posts']}} </tr><br>
+    <tr> Hearts per Post (all posts): {{result['hearts_per_post']}} </tr><br>
+    <tr> Hearts per Hearted Post: {{result['favorites_per_favorited_post']}} </tr><br>
+    <br>
+  {% endfor %}
+  </table>
+{% endblock %}

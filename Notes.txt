@@ -1,0 +1,12 @@
+source bin/activate from venv folder to activate the virtual environment. Then set
+FLASK_APP=flaskr
+flask run
+
+To kill flask server:
+sudo lsof -i:5000 - get PID of process
+sudo kill -9 <PID>
+
+
+Next steps:
+Make each group a hyperlink to group statistics. Some sort of loading screen while Python
+performs the data generation. Need to look into Async.

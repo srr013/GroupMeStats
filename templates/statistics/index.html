@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}GroupMe Stats{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+Instructions: Select your group to view stats. Once clicked please allow 1-2 minutes for the statistics to generate.<br>
+  <table>
+  {% for result in results %}
+    <tr> <a href="/groupnum={{result[2]}}">* {{result[1]}} </a> </tr><br>
+  {% endfor %}
+  </table>
+{% endblock %}
