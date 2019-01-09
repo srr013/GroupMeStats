@@ -1,4 +1,4 @@
-#Access token: Ct9QSqYn4B9whURPk00A8Mn0G31QHkfqKlIbPkj8
+
 #{'attachments': [], 'avatar_url': 'https://i.groupme.com/750x750.jpeg.62819788722a4584a4db8ba812e622c5', 'created_at': 1546720335,
 # 'favorited_by': [], 'group_id': '41856287', 'id': '154672033522145700', 'name': 'Scott Rossignol', 'sender_id': '9406803',
 # 'sender_type': 'user', 'source_guid': '4683A95A-841F-497B-A1B2-945828A43F31', 'system': False, 'text': 'Mer’s company holiday party. Just there Friday and Saturday', 'user_id': '9406803'}
